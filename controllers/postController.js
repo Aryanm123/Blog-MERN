@@ -17,9 +17,7 @@ module.exports.createPost = (req, res) => {
 		if (body === '') {
 			errors.push({ msg: 'Body is required' });
 		}
-		if (description === '') {
-			errors.push({ msg: 'Description is required' });
-		}
+		
 		if (slug === '') {
 			errors.push({ msg: 'Slug is required' });
 		}
@@ -107,7 +105,7 @@ module.exports.updateValidations = [
 			}
 		})
 		.withMessage('Body is required'),
-	body('description').notEmpty().trim().withMessage('Description is required'),
+	// body('description').notEmpty().trim().withMessage('Description is required'),
 ];
 module.exports.updatePost = async (req, res) => {
 	const { title, body, description, id } = req.body;

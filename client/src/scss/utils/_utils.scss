@@ -113,3 +113,19 @@ a {
 	margin-left: 1.5rem;
 	cursor: pointer;
 }
+
+.editor-layout {
+	// resize: vertical;
+	// overflow-y: scroll;
+	// width: 90%;
+  	// height: 300px;
+	  width: 90%;
+  height: 300px;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 20px;
+  padding-bottom: 40px; //fix bug here
+  }
+  .editor-container {
+	// height: 100% !important;
+	}

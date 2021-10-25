@@ -21,13 +21,7 @@ const Home = () => {
 
 	return (
 		<>
-			<Helmet>
-				<title>Web articles</title>
-				<meta
-					name='description'
-					content='Learn HTML, CSS, JavaScript, React, Vue, Flutter etc'
-				/>
-			</Helmet>
+			
 			<div className='container'>
 				<div className='row mt-100' style={{ marginBottom: '30px' }}>
 					<div className='col-9 home'>

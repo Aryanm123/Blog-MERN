@@ -130,9 +130,9 @@ const Create = (props) => {
 											onChange={fileHandle}
 										/>
 									</div>
-									<div className='group'>
+									<div className='group editor-container'>
 										<label htmlFor='body'>Post body</label>
-										<ReactQuill
+										<ReactQuill className="editor-layout"
 											theme='snow'
 											id='body'
 											placeholder='Post body...'
@@ -140,22 +140,7 @@ const Create = (props) => {
 											onChange={setValue}
 										/>
 									</div>
-									<div className='group'>
-										<label htmlFor='description'>Meta Description</label>
-										<textarea
-											name='description'
-											id='description'
-											cols='30'
-											rows='10'
-											defaultValue={state.description}
-											onChange={handleDescription}
-											className='group__control'
-											placeholder='meta description...'
-											maxLength='150'></textarea>
-										<p className='length'>
-											{state.description ? state.description.length : 0}
-										</p>
-									</div>
+									
 								</div>
 							</div>
 							<div className='col-6 p-15'>
